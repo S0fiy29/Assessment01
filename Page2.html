@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulah - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>MULAH</h1>
+        <h2>Registration</h2>
+        <p>Please fill up your details.</p>
+
+        <form onsubmit="event.preventDefault(); submitRegistration();">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" class="input-field">
+            <p id="nameWarning" class="warning-text"></p>
+
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" class="input-field">
+            <p id="birthdayWarning" class="warning-text"></p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email Address" class="input-field">
+            <p id="emailWarning" class="warning-text"></p>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="noEmailCheckbox" onclick="toggleEmail()">
+                <label for="noEmailCheckbox">No email address</label>
+            </div>
+
+            <button type="submit">Continue</button>
+        </form>    
+
+        <h5><span style="color: gray">Powered by</span> <span style="color: #007BFF;">MulahRewards.com</span></h5>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
